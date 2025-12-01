@@ -113,7 +113,7 @@ export default function Home() {
       </div>
 
       <section className="w-full bg-white flex h-fit justify-center">
-        <div className="w-5/6s bg-white rounded-3xl text-white shadow p-10 -mt-12 mb-20">
+        <div className="w-5/7 bg-white rounded-3xl text-white shadow p-10 -mt-12 mb-20">
           <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-3 flex mb-20 gap-2.5">
             Tentang Kami
           </div>
