@@ -231,6 +231,11 @@ export default function Home() {
           <h1 className="text-white font-normal text-normal mt-2 md:mt-3 gap-3">
             Bantu Mereka Tumbuh Maksimal
           </h1>
+          <div>
+            <h2 className="text-white font-normal text-[14px] mt-12">
+               ©2025 Potensi Siswa
+            </h2>
+          </div>
         </div>
 
 
@@ -239,13 +244,10 @@ export default function Home() {
             <h1 className="text-white text-[18px] font-semibold mb-3">
               Navigasi
             </h1>
-            <a className="text-white text-[14px] font-normal">
+            <a className="text-white text-[14px] font-normal" href="Beranda">
               Beranda
             </a>
-            <a className="text-white text-[14px] font-normal">
-              Tentang
-            </a>
-            <a className="text-white text-[14px] font-normal">
+            <a className="text-white text-[14px] font-normal" href="pengembang">
               Pengembang
             </a>
           </div>
@@ -253,7 +255,7 @@ export default function Home() {
             <h2 className="text-white text-[18px] font-semibold mb-3">
               Bantuan
             </h2>
-            <a className="text-white text-[14px] font-normal">
+            <a className="text-white text-[14px] font-normal" href="faq">
               FAQ
             </a>
           </div>
