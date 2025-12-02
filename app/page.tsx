@@ -8,7 +8,7 @@ export default function Home() {
     <div className="w-full">
       {/*Hero section start*/}
       <div className="w-full flex flex-col items-center justify-center">
-        <nav className="fixed top-0 z-50 w-full">
+        <nav className="fixed bg-white top-0 z-50 w-full">
           <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <div className="flex flex-wrap min-h-15 items-center justify-between">
               <a className="flex space-x-2">
@@ -44,18 +44,18 @@ export default function Home() {
         </nav>
 
         <div className={`z-10 w-full bg-white fixed left-0 top-12 transform ease-linear duration-300 transition-transform ${show ? `` : `-translate-y-[300px]`}`}>
-          <nav className="flex flex-col px-4 py-4 gap-4">
-            <a className="text-[14px] text-base font-medium" href="/">
+          <nav className="flex flex-col px-4 py-6 gap-6">
+            <a className="text-[16px] text-base font-medium" href="/">
               Beranda
             </a>
-            <a className="text-[14px] text-base font-medium" href="/">
-              Tentang
+            <a className="text-[16px] text-base font-medium" href="pengembang">
+              Pengembang
             </a>
-            <a className="text-[14px] text-base font-medium" href="/">
+            <a className="text-[16px] text-base font-medium" href="faq">
               FAQ
             </a>
-            <a className="text-[14px] text-base font-medium" href="/">
-              Pengembang
+            <a className="bg-primary text-white font-bold text-[14px] rounded whitespace-nowrap px-5 py-3 mt-8 flex justify-center items-center" href="login">
+              Masuk
             </a>
           </nav>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
           </div>
           <div>
             <button className="mt-20">
-              <a className="bg-primary rounded-full mt-20 py-4 px-6 text-normal font-bold text-white shadow-2xs" href="/">
+              <a className="bg-primary rounded-full mt-20 py-4 px-6 text-normal font-bold text-white shadow-2xs" href="login">
                 Mulai Sekarang
               </a>
             </button>
@@ -113,24 +113,24 @@ export default function Home() {
       </div>
 
       <section className="w-full bg-white flex h-fit justify-center">
-        <div className="w-5/7 bg-white rounded-3xl text-white shadow p-10 -mt-12 mb-20">
+        <div className="w-5/6 md:5/7 bg-white rounded-3xl text-white shadow p-10 -mt-12 mb-20">
           <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-3 flex mb-20 gap-2.5">
             Tentang Kami
           </div>
-          <div className="flex flex-col md:flex-row gap-6">
-            <h1 className="text-base font-bold text-4xl md:text-5xl w-full md:w-2/3">
+          <div className="flex flex-col md:flex-row gap-5">
+            <h1 className="text-base font-bold text-4xl md:text-5xl w-2/3 md:w-full">
               Apa itu <span className="text-primary">Potensi Siswa?</span>
             </h1>
             <p className="text-base font-normal text-normal w-full md:w-1/2">
-              Bantu temukan dan mengembangkan potensi terbaik setiap siswa dengan satu platform yang cerdas dan mudah digunakan.
+              Bantu temukan serta mengembangkan potensi terbaik setiap siswa dengan satu platform yang cerdas dan mudah digunakan.
             </p>
           </div>
-          <div className="flex flex-col bg-white md:flex-row justify-around items-strecth mt-20 gap-8">
+          <div className="flex flex-col bg-white md:flex-row justify-around items-strecth mt-20 gap-12">
             <div className="max-w-full md:max-w-60">
               <img src="Book.svg"
                 alt="book"
               />
-              <h1 className="text-base text-2xl font-bold mt-8">
+              <h1 className="text-base text-[20px] md:text-2xl font-bold mt-8">
                 Potensi Akademik
               </h1>
               <p className="text-base text-normal font-normal mt-5">
@@ -141,7 +141,7 @@ export default function Home() {
               <img src="Star.svg"
                 alt="star"
               />
-              <h1 className="text-base text-2xl font-bold mt-8">
+              <h1 className="text-base text-[20px] md:text-2xl font-bold mt-8">
                 Potensi Non-Akademik
               </h1>
               <p className="text-base text-normal font-normal mt-5">
@@ -214,7 +214,7 @@ export default function Home() {
             </h2>
           </div>
           <button className="mt-20 mb-20">
-            <a className="bg-primary text-white font-bold text-normal rounded-full px-6 py-4" href="/">
+            <a className="bg-primary text-white font-bold text-normal rounded-full px-6 py-4" href="login">
               Masuk ke Akun
             </a>
           </button>
@@ -223,19 +223,14 @@ export default function Home() {
 
       {/* Footer */}
 
-      <footer className="w-full flex flex-col md:flex-row bg-primary justify-around py-6 px-6  text-start gap-5">
+      <footer className="w-full flex flex-col md:flex-row bg-primary justify-around py-6 px-6 text-start gap-5">
         <div className="w-full md:w-96">
           <a className="text-white font-bold text-2xl">
             Potensi Siswa
           </a>
-          <h1 className="text-white font-normal text-normal mt-2 md:mt-3 gap-3">
+          <h1 className="text-white font-normal text-normal mt-3">
             Bantu Mereka Tumbuh Maksimal
           </h1>
-          <div>
-            <h2 className="text-white font-normal text-[14px] mt-12">
-               ©2025 Potensi Siswa
-            </h2>
-          </div>
         </div>
 
 
@@ -244,7 +239,7 @@ export default function Home() {
             <h1 className="text-white text-[18px] font-semibold mb-3">
               Navigasi
             </h1>
-            <a className="text-white text-[14px] font-normal" href="Beranda">
+            <a className="text-white text-[14px] font-normal" href="/">
               Beranda
             </a>
             <a className="text-white text-[14px] font-normal" href="pengembang">

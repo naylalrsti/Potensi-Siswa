@@ -61,7 +61,7 @@ export default function developerPage() {
 
       <div className="w-full flex flex-col justify-center items-center">
         <div className="w-full flex flex-col justify-center items-center mt-15 mb-70 px-3 md:px-5">
-          <h1 className="text-base text-5xl font-bold text-center">
+          <h1 className="text-base text-3xl md:text-5xl font-bold text-center">
             Development Team
           </h1>
           <p className="text-base text-normal font-normal mt-8">
@@ -101,27 +101,29 @@ export default function developerPage() {
           </div>
         </div>
       </div>
-      <footer className="w-full flex flex-col md:flex-row bg-primary justify-around py-4 px-6  text-start gap-5">
+
+      {/* Footer */}
+
+      <footer className="w-full flex flex-col md:flex-row bg-primary justify-around py-6 px-6 text-start gap-5">
         <div className="w-full md:w-96">
           <a className="text-white font-bold text-2xl">
             Potensi Siswa
           </a>
-          <h1 className="text-white font-normal text-normal mt-2 md:mt-3 gap-3">
+          <h1 className="text-white font-normal text-normal mt-3">
             Bantu Mereka Tumbuh Maksimal
           </h1>
         </div>
+
+
         <div className="flex flex-col md:flex-row gap-3 md:w-[600px]">
           <div className="flex flex-col gap-3 w-full">
             <h1 className="text-white text-[18px] font-semibold mb-3">
               Navigasi
             </h1>
-            <a className="text-white text-[14px] font-normal">
+            <a className="text-white text-[14px] font-normal" href="/">
               Beranda
             </a>
-            <a className="text-white text-[14px] font-normal">
-              Tentang
-            </a>
-            <a className="text-white text-[14px] font-normal">
+            <a className="text-white text-[14px] font-normal" href="pengembang">
               Pengembang
             </a>
           </div>
@@ -129,7 +131,7 @@ export default function developerPage() {
             <h2 className="text-white text-[18px] font-semibold mb-3">
               Bantuan
             </h2>
-            <a className="text-white text-[14px] font-normal">
+            <a className="text-white text-[14px] font-normal" href="faq">
               FAQ
             </a>
           </div>
@@ -146,6 +148,7 @@ export default function developerPage() {
           </div>
         </div>
       </footer>
+
     </div>
   )
 }

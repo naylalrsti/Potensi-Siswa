@@ -2,7 +2,7 @@ export default function Login() {
     return (
         <div className="w-full min-h-dvh  flex flex-col justify-center items-center">
             <div>
-                <div className="w-fit flex flex-col justify-center items-center shadow rounded-md px-16 py-8">
+                <div className="w-80 md:w-fit flex flex-col justify-center items-center shadow rounded-md px-8 md:px-16 py-6">
                     <div className="flex flex-col justify-center items-center">
                         <h1 className="text-base font-semibold text-2xl">
                             Potensi Siswa
@@ -11,7 +11,7 @@ export default function Login() {
                             Silahkan login menggunakan akun Google <br />SMK Telkom Malang
                         </p>
                         <button>
-                            <a className="w-fit flex justify-center items-center border border-primary px-8 py-3 rounded-lg mt-18 gap-3" href="/">
+                            <a className="w-fit flex justify-center items-center border border-primary px-6 md:px-8 py-3 rounded-lg mt-18 gap-3" href="/">
                                 <svg width="20px" height="20px" viewBox="0 0 256 262" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                                     <g>
                                         <path d="M255.878,133.451 C255.878,122.717 255.007,114.884 253.122,106.761 L130.55,106.761 L130.55,155.209 L202.497,155.209 C201.047,167.249 193.214,185.381 175.807,197.565 L175.563,199.187 L214.318,229.21 L217.003,229.478 C241.662,206.704 255.878,173.196 255.878,133.451" fill="#4285F4" />
@@ -20,7 +20,7 @@ export default function Login() {
                                         <path d="M130.55,50.479 C155.064,50.479 171.6,61.068 181.029,69.917 L217.873,33.943 C195.245,12.91 165.798,0 130.55,0 C79.49,0 35.393,29.301 13.925,71.947 L56.136,104.73 C66.726,73.253 96.027,50.479 130.55,50.479" fill="#EB4335" />
                                     </g>
                                 </svg>
-                                <h2 className="text-primary font-regular text-normal">
+                                <h2 className="text-primary font-regular text-[12px] md:text-normal">
                                     Masuk dengan Google
                                 </h2>
                             </a>
