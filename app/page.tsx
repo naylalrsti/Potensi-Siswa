@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/*Hero section start*/}
-      <div className="w-full flex flex-col items-center justify-center">
+      <div className="w-full bg-linear-to-b from-white via-primary/5 to-primary/20 flex flex-col items-center justify-center">
         <nav className="fixed bg-white top-0 z-50 w-full">
           <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <div className="flex flex-wrap min-h-15 items-center justify-between">
@@ -29,7 +29,7 @@ export default function Home() {
                   </a>
                 </nav>
                 <button className="hidden md:flex">
-                  <a className="bg-primary text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-2 flex" href="login">
+                  <a className="border-primary border-2 text-primary hover:bg-primary duration-200 hover:text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-2 flex" href="login">
                     Login
                   </a>
                 </button>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className={`z-10 w-full bg-white fixed left-0 top-12 transform ease-linear duration-300 transition-transform ${show ? `` : `-translate-y-[300px]`}`}>
+        <div className={`z-10 w-full fixed left-0 top-12 transform ease-linear duration-300 transition-transform ${show ? `` : `-translate-y-[300px]`}`}>
           <nav className="flex flex-col px-4 py-6 gap-6">
             <a className="text-[16px] text-base font-medium" href="/">
               Beranda
@@ -62,7 +62,7 @@ export default function Home() {
 
         <div className="relative flex flex-col justify-center items-center mt-20 mb-60">
           <div>
-            <div className="hidden md:flex w-16 h-16 rounded-full justify-center items-center bg-green-400 text-white absolute top-12 -left-5 shadow-green-500">
+            <div className="hidden md:flex w-16 h-16 rounded-full justify-center items-center bg-green-400 text-white absolute top-12 -left-5 shadow-green-300">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
               </svg>
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
 
 
-          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-normal md:text-[14px] rounded-full whitespace-nowrap px-5 py-3 flex mt-20 mb-20 gap-3">
+          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-normal text-[14px] md:text-normal rounded-full whitespace-nowrap px-5 py-2 flex mt-20 mb-20 gap-3">
             Solusi terbaik untuk Siswa
             <div className="size-5">
               <img src="Union.svg" alt="union" />
@@ -95,7 +95,7 @@ export default function Home() {
             <h1 className="text-primary text-5xl md:text-6xl font-bold text-center">
               Potensi Siswa
             </h1>
-            <h2 className="text-base text-4xl md:text-5xl font-bold mt-4 text-center">
+            <h2 className="text-base text-3xl md:text-5xl font-bold mt-4 text-center">
               Bantu Mereka Tumbuh Maksimal
             </h2>
             <h3 className="text-base font-regular text-normal mt-8 text-center">
@@ -104,7 +104,7 @@ export default function Home() {
           </div>
           <div>
             <button className="mt-20">
-              <a className="bg-primary rounded-full mt-20 py-4 px-6 text-normal font-bold text-white shadow-2xs" href="login">
+              <a className="bg-primary hover:bg-red-700 duration-200 rounded-full mt-20 py-4 px-6 text-normal font-bold text-white shadow-2xs" href="login">
                 Mulai Sekarang
               </a>
             </button>
@@ -114,7 +114,7 @@ export default function Home() {
 
       <section className="w-full bg-white flex h-fit justify-center">
         <div className="w-5/6 md:5/7 bg-white rounded-3xl text-white shadow p-10 -mt-12 mb-20">
-          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-3 flex mb-20 gap-2.5">
+          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-2 flex mb-20 gap-2.5">
             Tentang Kami
           </div>
           <div className="flex flex-col md:flex-row gap-5">
@@ -152,9 +152,10 @@ export default function Home() {
         </div>
       </section>
 
+
       <section className="w-full flex flex-col bg-primary justify-center items-center px-8">
         <div className="w-full flex flex-col justify-center items-center">
-          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-3 flex mt-20 gap-2.5">
+          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-2 flex mt-20 gap-2.5">
             Pihak Terlibat
           </div>
           <div className="flex flex-col justify-center items-center mt-20">
@@ -202,7 +203,7 @@ export default function Home() {
 
       <section className="w-full bg-white flex justify-center">
         <div className="w-full flex flex-col justify-center items-center">
-          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-2 md:py-3 flex mt-20 gap-2.5">
+          <div className="w-fit bg-blue-300 border-3 border-blue-500/20 text-white font-bold text-[14px] rounded-full whitespace-nowrap px-5 py-2 flex mt-20 gap-2.5">
             Mulai Sekarang
           </div>
           <div className="px-5 mt-8 md:mt-20">
@@ -214,7 +215,7 @@ export default function Home() {
             </h2>
           </div>
           <button className="mt-20 mb-20">
-            <a className="bg-primary text-white font-bold text-normal rounded-full px-6 py-4" href="login">
+            <a className="bg-primary hover:bg-red-7 00 duration-200 text-white font-bold text-normal rounded-full px-6 py-4" href="login">
               Masuk ke Akun
             </a>
           </button>

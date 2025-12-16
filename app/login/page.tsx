@@ -1,6 +1,6 @@
 export default function Login() {
     return (
-        <div className="w-full min-h-dvh  flex flex-col justify-center items-center">
+        <div className="w-full min-h-dvh bg-base-2 flex flex-col justify-center items-center">
             <div>
                 <div className="w-80 md:w-fit flex flex-col justify-center items-center shadow rounded-md px-8 md:px-16 py-6">
                     <div className="flex flex-col justify-center items-center">
