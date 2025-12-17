@@ -215,7 +215,7 @@ export default function Home() {
             </h2>
           </div>
           <button className="mt-20 mb-20">
-            <a className="bg-primary hover:bg-red-7 00 duration-200 text-white font-bold text-normal rounded-full px-6 py-4" href="login">
+            <a className="bg-primary hover:bg-red-700 duration-200 text-white font-bold text-normal rounded-full px-6 py-4" href="login">
               Masuk ke Akun
             </a>
           </button>
