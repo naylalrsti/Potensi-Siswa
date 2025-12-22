@@ -94,7 +94,7 @@ export default function developerPage() {
                   Nayla Larasati
                 </h1>
                 <p className="text-normal text-base font-normal text-center mt-5">
-                  Fullstack Developer
+                  UI/UX Designer
                 </p>
               </div>
             </div>

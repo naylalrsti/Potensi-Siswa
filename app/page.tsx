@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/*Hero section start*/}
-      <div className="w-full bg-linear-to-b from-white via-primary/5 to-primary/20 flex flex-col items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center">
         <nav className="fixed bg-white top-0 z-50 w-full">
           <div className="container mx-auto px-4 md:px-6 max-w-7xl">
             <div className="flex flex-wrap min-h-15 items-center justify-between">
